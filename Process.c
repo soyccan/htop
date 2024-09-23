@@ -267,6 +267,9 @@ void Process_makeCommandStr(Process* this, const Settings* settings) {
                CHECK_AND_MARK(str_, "/lib64/");                                               \
                CHECK_AND_MARK(str_, "/libx32/");                                              \
                break;                                                                         \
+            case 'n':                                                                         \
+               CHECK_AND_MARK(str_, "/nix/store");                                            \
+               break;                                                                         \
             case 's':                                                                         \
                CHECK_AND_MARK(str_, "/sbin/");                                                \
                break;                                                                         \
